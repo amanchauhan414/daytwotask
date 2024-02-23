@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking Form</title>
+    <link rel="stylesheet" href="ContactUs.css">
+</head>
+
+<body>
+    <h1>Contact Form</h1>
+    <form id="myForm">
+        <div class="increase">
+            <label for="name">Enter Name:</label>
+            <input type="text" id="name" name="name">
+        </div>
+        <div class="increase">
+            <label for="email">Enter Email:</label>
+            <input type="email" name="email" id="email">
+        </div>
+        <div id="Select-dest" class="increase">
+            <label for="dest">Select Destination:</label>
+            <select name="destination" id="dest">
+                <option value="Shimla">Shimla</option>
+                <option value="Manali">Manali</option>
+                <option value="Goa">Goa</option>
+            </select>
+        </div>
+        <button id="submit" type="submit">Submit</button>
+    </form>
+    <div id="output"></div>
+    <script>
+        const form = document.getElementById('myForm');
+        const outputDiv = document.getElementById('output');
+
+        
+        
+
+        form.addEventListener('submit', function(event) {
+            event.preventDefault();
+
+           
+            const formData = new FormData(form);
+            const formObj = {};
+            formData.forEach((value, key) => {
+                formObj[key] = value;
+            });
+
+            
+            localStorage.setItem('formData', JSON.stringify(formObj));
+
+            
+            displayFormData(formObj);
+        });
+
+        
+        function displayFormData(formData) {
+            outputDiv.innerHTML = `
+                <p>Dear  ${formData.name} your ticket has been  booked for ${formData.destination}.</p>
+            `;
+        }
+    </script>
+</body>
+
+</html>
