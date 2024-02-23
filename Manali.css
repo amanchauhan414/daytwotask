@@ -1,0 +1,109 @@
+.navbar ul{
+    display:flex ;
+    margin-left: 460px;
+}
+.navbar li{
+    list-style: none;
+    font-size: 20px;
+    padding: 0px 20px;
+    font-family: cursive;
+}
+
+.navbar li:hover{
+    background-color: black;
+    color: white;
+    padding: 6px 8px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.header
+{
+    display: flex;
+    background-color:rgb(162, 200, 232) ;
+}
+.logo img
+{
+    width: 260px;
+}
+.intro
+{
+    text-align: center;
+    font-family: cursive;
+    color: rgb(229, 131, 18);
+}
+.introimg
+{
+   margin: auto;
+   text-align: center;
+   align-items: center;
+}
+.introimg img{
+    width: 320px;
+}
+hr{
+    margin-top: 20px;
+    height: 2px;
+    background: black;
+}
+.footer
+{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+}
+.footer img
+{
+    width: 40px;
+    padding: 4px 6px;
+}
+.msg
+{
+    text-align: center;
+    font-family: cursive;
+    font-size: 20px;
+    /* margin-top: -10px; */
+    color: black;
+}
+.card-container{
+    display:flex;
+    justify-content: center;
+   
+    width: 100%;
+
+
+}
+
+#first-card img
+{
+    height: 190px;
+    
+}
+.card-img-top1{
+ padding: 7px;
+}
+.card-img-top2{
+    padding: 7px;
+   }
+
+   .card-img-top3{
+    padding: 7px;
+   }
+
+   .card{
+    margin: 5px 20px;
+   }
+
+   
+   hr{
+    margin-top: 70px;
+   }
+   .intro{
+    margin-top:10px;
+   }
+
+   #solang img
+   {height: 200px;
+    
+   }

@@ -1,0 +1,72 @@
+.navbar ul{
+    display:flex ;
+    margin-left: 460px;
+}
+.navbar li{
+    list-style: none;
+   
+}
+
+.navbar li:hover{
+    background-color: black;
+    color: white;
+    padding: 6px 8px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.navbar a{
+    text-decoration: none;
+    font-size: 20px;
+    padding: 0px 20px;
+    font-family: cursive;
+}
+
+.header
+{
+    display: flex;
+    background-color:rgb(162, 200, 232) ;
+}
+.logo img
+{
+    width: 260px;
+}
+.intro
+{
+    text-align: center;
+    font-family: cursive;
+    color: rgb(229, 131, 18);
+}
+.introimg
+{
+   margin: auto;
+   text-align: center;
+   align-items: center;
+}
+.introimg img{
+    width: 320px;
+}
+hr{
+    margin-top: 20px;
+    height: 2px;
+    background: black;
+}
+.footer
+{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+}
+.footer img
+{
+    width: 40px;
+    padding: 4px 6px;
+}
+.msg
+{
+    text-align: center;
+    font-family: cursive;
+    font-size: 20px;
+    /* margin-top: -10px; */
+    color: black;
+}
